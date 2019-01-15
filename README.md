@@ -1,1 +1,1 @@
-A collection of youtube-dl config files
+My collection of youtube-dl config files.
