@@ -1,0 +1,35 @@
+####    Description
+#For extracting audio files out of websites
+####
+
+
+####[Debug]
+#Display verbose output
+--verbose
+
+####[Download]
+#How many retries per video
+--retries "infinite"
+#Skips errors
+-i
+#geo-restrictions
+--geo-bypass
+
+####[Output]
+#Directory location
+-o /home/jay/smb/youtube-dl/[AUDIO]/%(uploader)s/%(title)s.%(ext)s
+#Filesystem Options
+--no-overwrites
+#Do not apply modified time
+#--no-mtime
+
+####[Quality]
+-f 'bestaudio'
+
+####[Post-processing]
+#Extract only audio
+-x
+#audio quality (0 = best)
+--audio-quality 320k
+#audio format to merge with output file
+--audio-format "mp3"
